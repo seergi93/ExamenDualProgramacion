@@ -28,7 +28,7 @@ public class CarreraTest {
         Carrera cr = new Carrera ();
         cr.setDistancia(7.75);
         cr.setTiempoEsperado(10);
-        assertEquals(7.75,cr.getCosteEsperado(),0.1);
+        assertEquals(13.96,cr.getCosteEsperado(),0.1);
     }
     
     @BeforeClass
