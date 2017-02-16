@@ -73,32 +73,18 @@ public class Tarifa {
         return costeMilla;
     }
 
-    public void setCosteMilla(double costeMilla) {
-        this.costeMilla = costeMilla;
-    }
 
     public static double getCosteMinuto() {
         return costeMinuto;
     }
 
-    public void setCosteMinuto(double costeMinuto) {
-        this.costeMinuto = costeMinuto;
-    }
+   
 
     public static double getCosteMinimo() {
         return costeMinimo;
     }
 
-    public void setCosteMinimo(double costeMinimo) {
-        this.costeMinimo = costeMinimo;
-    }
+    
 
-    public double getPorcentajeComision() {
-        return porcentajeComision;
-    }
-
-    public void setPorcentajeComision(double porcentajeComision) {
-        this.porcentajeComision = porcentajeComision;
-    }
 
 }

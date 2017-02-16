@@ -13,15 +13,24 @@ import java.util.ArrayList;
  */
 public class PoolConductores {
 
-    private Conductor[] poolConducores = null;
+    private int conductores;
+
+    ArrayList<Conductor> poolConductores;
+
     private Conductor conductor = new Conductor();
 
     public PoolConductores() {
     }
 
-    public PoolConductores(Conductor[] poolConducores) {
-        this.poolConducores = poolConducores;
+    public PoolConductores(int conductores) {
+        this.conductores = conductores;
     }
+      public PoolConductores(ArrayList<Conductor> poolConductores) {
+        this.poolConductores = poolConductores;
+    }
+    
+    
+
 //    
 //    public Conductor asignarConductor(){
 //        
@@ -40,12 +49,11 @@ public class PoolConductores {
 //        }
 //        
 //    }
-
 //    
 //    El constructor PoolConductores(conductores) recibe un array de longitud variable de conductores.
 //asignarConductor()selecciona un conductor libre entre la flota y lo devuelve, estableciendo que ese conductor está ahora ocupado.
 
-    public PoolConductores(ArrayList<Conductor> poolConductores) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+  
+    
+
 }

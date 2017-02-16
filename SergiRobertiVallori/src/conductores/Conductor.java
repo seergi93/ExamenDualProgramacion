@@ -36,14 +36,20 @@ public class Conductor {
         this.ocupado = ocupado;
     }
     
-    public void setValoracion(byte valoracion){
+    public void setValoracion(int valoracion){
         
         setValoraciones(getValoraciones()+valoracion);
-        setNumeroValoraciones(+1);
+        setNumeroValoraciones(getNumeroValoraciones() +1);
         setValoracionMedia(getValoraciones()/getNumeroValoraciones());
         
         
     }
+    public double getValoracion(){
+        return this.valoracionMedia;
+    }
+    
+    
+    
 
      /*
     GETTERS Y SETTERS
@@ -67,21 +73,7 @@ public class Conductor {
         this.nombre = nombre;
     }
 
-    public String getModelo() {
-        return modelo;
-    }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-
-    public String getMatricula() {
-        return matricula;
-    }
-
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
-    }
 
     public double getValoracionMedia() {
         return valoracionMedia;
@@ -106,6 +98,8 @@ public class Conductor {
     public void setOcupado(boolean ocupado) {
         this.ocupado = ocupado;
     }
+    
+    
 
     
     
