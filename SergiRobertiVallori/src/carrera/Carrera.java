@@ -5,13 +5,14 @@
  */
 package carrera;
 
+import tarifa.Tarifa;
+
 /**
  *
  * @author Sergi
  */
 public class Carrera {
 
-    
     private double tiempoEsperado = 0d;
     private double tiempoCarrera = 0d;
     private double costeTotal = 0d;
@@ -19,12 +20,12 @@ public class Carrera {
     private String origen;
     private String destino;
     private double distancia;
-    private String tarjetaDeCredito;
-    
+    private String tarjetaCredito;
+    private Tarifa tarifa = null;
+
     /*
     CONSTRUCORES
-    */
-
+     */
     public Carrera() {
 
     }
@@ -36,49 +37,27 @@ public class Carrera {
         this.conductor = conductor;
     }
 
-    public Carrera(String tarjetaDeCredito) {
-        this.tarjetaDeCredito = tarjetaDeCredito;
+    public Carrera(String tarjetaCredito) {
+        this.tarjetaCredito = tarjetaCredito;
     }
-    
-    
 
-    //    getTarjetaCredito() devuelve el número de la tarjeta de crédito del usuario/a.
- 
-    
-//getOrigen() devuelve el lugar de origen del trayecto.
-    
-   
-    
-    
-    
-//getDestino() devuelve el lugar de destino del trayecto.
-    
-    
-//getDistancia() devuelve la distancia entre el origen y el destino.
-    
-    
 //getCosteEsperado() devuelve el coste esperado del trayecto, cuyo cálculo es responsabilidad de la clase Tarifa.
-    
-    
 //asignarConductor(PoolConductores conductores) recibe la flota de conductores y
     //asigna un conductor a la carrera. Le pide a la clase PoolConductores que le asigne un conductor.
     
     
-    
-public double getCosteEsperado() {
-    
-    
-    
-}
+    public double getCosteEsperado() {
+        
+        return tarifa.getCosteTotalEsperado(Carrera.this);
+
+    }
 //realizarPago(pago) recibe el pago y lo almacena en el atributo costeTotal
 //recibirPropina(propina) recibe la propina que paga el usuario
 //liberarConductor() establece que el conductor asignado a la carrera queda libre tras el servicio.
-            
-            
-            /*
-            GETTERS Y SETTERS
-            */
 
+    /*
+            GETTERS Y SETTERS
+     */
     public void setTiempoEsperado(double tiempoEsperado) {
         this.tiempoEsperado = tiempoEsperado;
     }
@@ -111,13 +90,8 @@ public double getCosteEsperado() {
         return distancia;
     }
 
-    public String getTarjetaDeCredito() {
-        return tarjetaDeCredito;
+    public String getTarjetaCredito() {
+        return tarjetaCredito;
     }
-    
-    
-            
-    
-            
-            
+
 }
