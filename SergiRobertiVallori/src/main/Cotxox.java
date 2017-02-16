@@ -16,7 +16,7 @@ public class Cotxox {
 		 * Configuracion del usuario
 		 * y de la Carrera.
 		 * 
-         */
+//         */
 //        String tarjetaCredito = "4916119711304546";
 //        String origen = "Aeroport Son Sant Joan";
 //        String destino = "Magaluf";
@@ -92,9 +92,9 @@ public class Cotxox {
 //        } else {
 //            System.out.println("Esta conductora no esta disponible :/");
 //        }
-//        // cancel ride
-//        // contact by phone		
-//
+        // cancel ride
+        // contact by phone		
+
 //        System.out.println("\n#####" + "\t Pay and Tip: \t" + "#####\n");
 //
 //        carrera.realizarPago(carrera.getCosteEsperado());

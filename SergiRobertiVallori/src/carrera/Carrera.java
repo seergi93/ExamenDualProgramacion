@@ -5,6 +5,7 @@
  */
 package carrera;
 
+import conductores.PoolConductores;
 import tarifa.Tarifa;
 
 /**
@@ -21,7 +22,7 @@ public class Carrera {
     private String destino;
     private double distancia;
     private String tarjetaCredito;
-    private Tarifa tarifa = null;
+    
 
     /*
     CONSTRUCORES
@@ -40,6 +41,9 @@ public class Carrera {
     public Carrera(String tarjetaCredito) {
         this.tarjetaCredito = tarjetaCredito;
     }
+    public void asignarConductor(PoolConductores conductores) {
+        
+    }
 
 //getCosteEsperado() devuelve el coste esperado del trayecto, cuyo cálculo es responsabilidad de la clase Tarifa.
 //asignarConductor(PoolConductores conductores) recibe la flota de conductores y
@@ -48,7 +52,7 @@ public class Carrera {
     
     public double getCosteEsperado() {
         
-        return tarifa.getCosteTotalEsperado(this);
+        return Tarifa.getCosteTotalEsperado(this);
 
     }
 //realizarPago(pago) recibe el pago y lo almacena en el atributo costeTotal
@@ -93,5 +97,7 @@ public class Carrera {
     public String getTarjetaCredito() {
         return tarjetaCredito;
     }
+
+    
 
 }
