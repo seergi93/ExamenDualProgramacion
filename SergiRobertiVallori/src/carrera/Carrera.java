@@ -48,7 +48,7 @@ public class Carrera {
     
     public double getCosteEsperado() {
         
-        return tarifa.getCosteTotalEsperado(Carrera.this);
+        return tarifa.getCosteTotalEsperado(this);
 
     }
 //realizarPago(pago) recibe el pago y lo almacena en el atributo costeTotal
